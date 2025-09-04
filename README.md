@@ -1,2 +1,1 @@
-# .github
-MountainAsh
+Mountain Ash
