@@ -21,7 +21,6 @@ The foundation the other packages build on.
 | Package | Intent |
 |---|---|
 | [mountainash-rules](https://github.com/mountainash-io/mountainash-rules) | Metadata-driven business rules engine. Rules are rows, not code: decision tables with multiple match strategies, ranked by specificity, evaluated in one vectorised pass, with per-rule explainability. |
-| [mountainash-rules-babel](https://github.com/mountainash-io/mountainash-rules-babel) | Translation of rule sets between formats, such as CSV and DMN. |
 | [mountainash-structuremap](https://github.com/mountainash-io/mountainash-structuremap) | Declarative, bidirectional transformation between hierarchical payloads (XML, JSON) and relational tables. |
 
 ## Utilities
@@ -29,9 +28,6 @@ The foundation the other packages build on.
 | Package | Intent |
 |---|---|
 | [mountainash-transport](https://github.com/mountainash-io/mountainash-transport) | Storage abstraction with one interface across local and cloud object stores. |
-| [mountainash-secrets](https://github.com/mountainash-io/mountainash-secrets) | Capability-graded secret-store protocols with pluggable stores and an injected resolver. |
-| [mountainash-pipelines](https://github.com/mountainash-io/mountainash-pipelines) | Generic pipeline protocols with predicate pushdown. |
-| [mountainash-resource-provider](https://github.com/mountainash-io/mountainash-resource-provider) | Neutral resource-provider contracts shared across packages. |
 
 ## Where to start
 
