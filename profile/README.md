@@ -1,32 +1,42 @@
-# 🏔️ MountainAsh
+# Mountain Ash
 
-**Credit Data Analytics, Software & Consulting**
+**A composable Python data engineering ecosystem.** Expressions, rules, validation, schema conformance and pipelines are built once against a single expression algebra, then run on Polars, pandas, DuckDB and the other backends reachable through Ibis and Narwhals. The backend becomes a deployment decision, not a code decision.
 
-We're a specialized IT consultancy focused on **Consumer Credit Reporting (CCR)** and **financial data modernization**. We help lenders - from small to large scale - navigate the complex world of credit data processing, compliance, and analytics.
+> **Status: under active development, not production ready.** None of the packages are on PyPI yet, and APIs can change without notice. `main` is the release line; work happens on `develop`.
 
-## 🎯 What We Do
+Documentation: **[docs.mountainash.io](https://docs.mountainash.io)**
 
-### 🛡️ Credit Reporting Solutions
-- **ACRDS & PRDE Compliance**: Complete Australian Credit Reporting Data Standard processing
-- **Multi-Bureau Operations**: Secure data orchestration across all major credit bureaus
-- **CCR Operations**: End-to-end Consumer Credit Reporting system implementation
+## Core framework
 
-### 🔧 Data & Analytics Services
-- **Legacy Data Modernization**: Transform outdated processes into modern, scalable solutions
-- **Credit Modeling & Decisioning**: Advanced analytics for lending decisions
-- **Model Governance**: Validation, stress testing, and regulatory compliance
+The foundation the other packages build on.
 
-### 💻 Technology Solutions
-- **Python-First Approach**: Modern data processing with robust tooling
-- **Open Source Adoption**: Leveraging and contributing to the data community
-- **Flexible Deployment**: Cloud-native solutions that scale with your business
+| Package | Intent |
+|---|---|
+| [mountainash](https://github.com/mountainash-io/mountainash) | Cross-backend expressions and relational plans. Write `col()`, `lit()`, `when()` in Polars-style syntax and compile to the selected backend. |
+| [mountainash-data](https://github.com/mountainash-io/mountainash-data) | One connection interface for analytical backends: relational databases through Ibis, and Iceberg catalogs through PyIceberg. |
+| [mountainash-settings](https://github.com/mountainash-io/mountainash-settings) | Typed configuration: layered YAML, TOML, JSON and environment variables, template resolution and Pydantic integration. |
 
-## 🌐 Visit Us
+## Rules and logic
 
-Learn more about our services at **[mountainash.io](https://mountainash.io)**
+| Package | Intent |
+|---|---|
+| [mountainash-rules](https://github.com/mountainash-io/mountainash-rules) | Metadata-driven business rules engine. Rules are rows, not code: decision tables with multiple match strategies, ranked by specificity, evaluated in one vectorised pass, with per-rule explainability. |
+| [mountainash-rules-babel](https://github.com/mountainash-io/mountainash-rules-babel) | Translation of rule sets between formats, such as CSV and DMN. |
+| [mountainash-structuremap](https://github.com/mountainash-io/mountainash-structuremap) | Declarative, bidirectional transformation between hierarchical payloads (XML, JSON) and relational tables. |
 
-## 📦 Open Source Contributions
+## Utilities
 
-We believe in giving back to the data community. Keep an eye on this space for upcoming Python packages and tools that we're open-sourcing to help the broader data ecosystem.
+| Package | Intent |
+|---|---|
+| [mountainash-transport](https://github.com/mountainash-io/mountainash-transport) | Storage abstraction with one interface across local and cloud object stores. |
+| [mountainash-secrets](https://github.com/mountainash-io/mountainash-secrets) | Capability-graded secret-store protocols with pluggable stores and an injected resolver. |
+| [mountainash-pipelines](https://github.com/mountainash-io/mountainash-pipelines) | Generic pipeline protocols with predicate pushdown. |
+| [mountainash-resource-provider](https://github.com/mountainash-io/mountainash-resource-provider) | Neutral resource-provider contracts shared across packages. |
+
+## Where to start
+
+Start with [mountainash](https://github.com/mountainash-io/mountainash) and its [manual](https://docs.mountainash.io/mountainash/). It introduces the expression and relation abstractions everything else uses.
 
 ---
+
+Built in Melbourne. Website: [mountainash.io](https://mountainash.io)
