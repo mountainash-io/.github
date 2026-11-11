@@ -6,6 +6,7 @@
 [![Website](https://img.shields.io/badge/Website-mountainash.io-555555?style=flat-square)](https://mountainash.io)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://docs.mountainash.io/about/)
 [![Status](https://img.shields.io/badge/Status-experimental-orange?style=flat-square)](#status)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0)
 
 > **Experimental.** Every package is experimental and none is ready for production use. The six core packages are at version 0.1.0, nothing is published on PyPI yet, and APIs can change between versions. `main` is the release line; work happens on `develop`.
 
@@ -103,7 +104,7 @@ More in [Design philosophy](https://docs.mountainash.io/philosophy/).
 
 ## Status
 
-The six core packages are at version 0.1.0, require Python 3.12 or later, and are licensed under Apache-2.0. None is published on PyPI yet; each book's installation chapter shows how to install from a source checkout.
+Every package is open source under the Apache License 2.0. The six core packages are at version 0.1.0 and require Python 3.12 or later. None is published on PyPI yet; each book's installation chapter shows how to install from a source checkout.
 
 ---
 
